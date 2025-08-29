@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "A template for creating TypeScript web applications with React.",
-  "files": [
-    "dist"
-  ],
+  "bin": "./create.mjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,6 +12,9 @@
   "keywords": [],
   "author": "<HexaField>",
   "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
     "@testing-library/jest-dom": "^6.8.0",

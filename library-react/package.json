@@ -12,9 +12,7 @@
       "import": "./dist/index.js"
     }
   },
-  "files": [
-    "dist"
-  ],
+  "bin": "./create.mjs",
   "scripts": {
     "build": "rm -rf dist && rollup -c",
     "test": "npm run build && vitest run",
@@ -25,6 +23,9 @@
   "keywords": [],
   "author": "<HexaField>",
   "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "peerDependencies": {
     "react": "^19.1.1"
   },
