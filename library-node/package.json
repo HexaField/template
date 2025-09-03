@@ -16,8 +16,6 @@
   "scripts": {
     "build": "rm -rf dist && rollup -c",
     "test": "npm run build && vitest run",
-    "test:watch": "npm run build && vitest",
-    "test:ui": "npm run build && vitest --ui",
     "prepublishOnly": "npm run build && npm test"
   },
   "keywords": [],
