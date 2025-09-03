@@ -16,6 +16,6 @@ Then:
 3) npm run dev
 
 ## What’s included
-- Vite + React + TypeScript
+- Vite + React + TypeScript + Tailwind
 - Vitest + Testing Library
 - ESLint + Prettier config

@@ -1,5 +1,9 @@
+// <reference types="node" />
+/// <reference types="node" />
 import fs from 'fs'
 import path from 'path'
+// @ts-ignore no types published for the vite plugin
+import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react-swc'
 import packageRoot from 'app-root-path'
 import dotenv from 'dotenv'
@@ -21,5 +25,5 @@ export default defineConfig(({ command }) => ({
         }
       : {})
   },
-  plugins: [react()]
+  plugins: [react(), tailwindcss()]
 }))
